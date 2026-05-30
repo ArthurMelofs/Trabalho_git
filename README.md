@@ -35,3 +35,27 @@ Inicialmente o sistema possuía apenas funcionalidades básicas de CRUD para ger
 
 Como evolução do projeto, foi adicionada a possibilidade de definir prioridades para as tarefas (Alta, Média ou Baixa), permitindo melhor organização do fluxo de trabalho e alinhamento com as necessidades do cliente.
 
+## Como Executar
+
+1. Clone o repositório:
+
+git clone URL_DO_REPOSITORIO
+
+2. Instale as dependências:
+
+py -m pip install -r requirements.txt
+
+3. Execute a aplicação:
+
+py src/app.py
+
+4. Acesse:
+
+http://127.0.0.1:5000
+
+## Testes
+
+Para executar os testes:
+
+py -m pytest
+
