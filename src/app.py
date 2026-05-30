@@ -16,8 +16,14 @@ def get_tasks():
 
 @app.route("/tasks", methods=["POST"])
 def create_task():
+
     task = request.json
+
+    if "prioridade" not in task:
+        task["prioridade"] = "Média"
+
     tasks.append(task)
+
     return jsonify(task), 201
 
 
